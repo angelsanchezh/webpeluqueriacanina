@@ -1,0 +1,24 @@
+.container-nav-principal{
+display: flex;
+
+}
+.container-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+color: black;
+    width:100%;
+    margin-top: 30px;
+
+}
+.container-nav > ul  {
+display: inline-flex;
+    list-style: none;   
+}
+.container-nav > ul >li a{
+    text-decoration: none;
+    margin: 20px;
+
+
+}
