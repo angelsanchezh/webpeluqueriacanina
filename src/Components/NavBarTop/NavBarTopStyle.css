@@ -2,6 +2,7 @@
   display: flex;
   width: 100%;
 
+
   
 }
 .Container-Contacto{
@@ -9,14 +10,18 @@
 display:inline-flex;
 justify-content: space-between;
 padding: 10px 20px 10px 20px;
-  background-color:#1ec1e4 ;
-  margin-bottom: 10px;
+margin-bottom: 10px;
+background-color: #1ec1e4;
+
+box-shadow: 9px -9px 18px -9px rgba(255,255,255,0.79) inset;
+-webkit-box-shadow: 9px -9px 18px -9px rgba(255,255,255,0.79) inset;
+-moz-box-shadow: 9px -9px 18px -9px rgba(255,255,255,0.79) inset;
 }
 
 .Container-Contacto, .bi > a{
  
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 450;
   color: white;
   padding: 10px;
   font-style: normal;
@@ -25,8 +30,29 @@ padding: 10px 20px 10px 20px;
   .Redes >a {
 color:white;
 padding: 10px;
-
+text-decoration: none;
 }
+
+.Redes >a .bi{
+font-size: 18px;
+border: none;
+}
+
+.Redes >a .bi:hover{
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+  transition: all 0.2s ease;
+border-radius: 15px;  }
+
+.Redes >a .bi-whatsapp{
+ display: none;
+  
+  }
+
+  .Redes >a .bi-telephone{
+    display: none;
+
+  }
 
 @media (max-width: 767px) {
 
@@ -35,24 +61,45 @@ padding: 10px;
   }
   .Container-Contacto{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   flex-wrap: wrap;
     background-color:#1ec1e4 ;
   }
-  
- 
-  
+    
     .Redes >a {
   color:white;
-display: inline-flex;
-align-items: center;
-  
+display: inline-flex;  
+padding: 15px;
   }
+
+  .Redes >a .bi{
+    font-size: 18px;
+  
+    }
+  .Redes >a .bi:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+  border-radius: 15px;  }
+
   .bi-geo-fill,
-  .bi-envelope-paper-fill{
+  .bi-envelope-paper-fill,
+  .bi-phone-vibrate,
+  .bi-whatsapp{
     display: none;
   }
 
+  .Redes >a .bi-whatsapp{
+    display: flex
+     
+     }
 
+     .Redes >a .bi-telephone{
+      display:flex;
+  
+    }
 
 }
 

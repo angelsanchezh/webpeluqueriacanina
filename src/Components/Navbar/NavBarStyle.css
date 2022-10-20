@@ -22,3 +22,11 @@ display: inline-flex;
 
 
 }
+
+@media (max-width: 767px){
+
+    .container-nav-principal{
+     display: none;
+    }
+
+}
